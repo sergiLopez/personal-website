@@ -1,0 +1,273 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+.prueba{
+    width: 100vw;
+    height: 100vh;
+    background-color: #252934;
+}
+
+
+.name-presentation{
+    color: #F6416C;
+}
+.title-presentation{
+    color: white;
+}
+
+.under-line{
+    width: 85px;
+    height: 5px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.line{
+    content: "";
+    position: relative;
+    top:50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,0.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+
+
+.content-presentation{
+    padding: 20% 35%;
+    text-align: center;
+}
+
+.work-button{
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: azure;
+}
+
+.icon-work{
+    margin-left: 10px;
+    
+}
+
+.work-button:hover{
+    background-color: #901;
+    transition: 0.5s;
+}
+
+.work-button:hover i{
+    transform: rotate(90deg);
+    color: aqua;
+    transition: 0.5s;
+}
+
+header .menu a{
+    margin-right: 55px;
+    font-size: 20px;
+    color: white;
+}
+
+header .menu{
+    text-align: center;
+    background-color: #252934;
+    padding: 30px 0;
+    opacity: 0.8;
+}
+
+.title-about{
+    text-align: center;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+.about-me-flex{
+    margin-bottom: 130px;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    padding: 80px 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+
+.item-flex{
+    flex: 1 0 200px;
+    padding: 0 90px;
+}
+
+.skill-item{
+    text-align: center;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(10px,1fr));
+    grid-gap: 10px 15px;
+    margin-bottom: 30px;
+}
+
+.skill-image{
+    width: 30%;
+    min-width: 70px;
+}
+
+.about{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.projects div{
+    width: 500px;
+    height: 280px;
+    
+}
+
+.projects{
+    
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 350px;
+
+}
+
+.about-section{
+    padding: 80px 200px;
+    
+}
+
+.projects div:nth-child(1){
+    background-image: url(https://s.yimg.com/ny/api/res/1.2/qrxpWcB5ihkhB9oc3VQUMw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM2MA--/https://s.yimg.com/os/creatr-uploaded-images/2021-11/6a24d810-3c81-11ec-b77e-1cadaabc44e5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+
+.projects div:nth-child(1):hover{
+    opacity: 0.2;
+    transition: 1s;
+}
+
+.projects div:nth-child(2){
+
+    background-image: url(https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/styles/bi_1860/public/media/image/2021/06/apps-nutricion-2358891.jpg?itok=In2trlfZ);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.projects div:nth-child(3){
+    background-image: url(https://www.americansinbarcelona.com/wp-content/uploads/2022/01/logo-5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.project-section{
+    padding: 100px 200px;
+    background-color: #F9F8ED;
+   
+}
+
+.contact-section{
+    padding: 100px 200px;
+}
+
+
+.overlay{
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   background-color: rgba(255,0,106,0.4);
+}
+
+form{
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 1vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 20px 0;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+
+input[type="text"]:focus, textarea:focus{
+    border-bottom: 1px solid rgb(255,0,106);
+    
+}
+
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgb(255,0,106);
+}
+
+.center{
+    text-align: center;
+}
+
+input[type="submit"]{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgb(255,0,106),rgb(255,67,61));
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.error{
+    color: red;
+}
+
+
+.error-border{
+    border-bottom: 1px solid red;
+}
+
