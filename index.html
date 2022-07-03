@@ -9,115 +9,126 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet"> 
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
     <title></title>
 </head>
 <body>
+    
 
-   
-    <div class="prueba">
-        <div class="content-presentation">
-            <h1 class="title-presentation">Hi! <span class="name-presentation">I'm Sergio Lopez</span>, <br> I'm a computer engineering student</h1>
-            <a href="#" class="work-button">See my work<i class="fa-solid fa-arrow-right icon-work"></i></a>
-        </div>
-    </div>
-    <header>
-        <nav class="menu">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Portfolio</a>
-            <a href="">Contact</a>
-        </nav>
-    </header>
+       <div id="particles-js"></div>
 
-    <section class="about-section">
-        <h1 class="title-about">ABOUT ME</h1>
-        <div class="under-line"></div>
-        <div class="about-me-flex">
-            <div class="item-flex text-about">
-                <h3 style="text-align: center;">Who Am I?</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos commodi amet blanditiis maiores. Doloribus ea quia vero at perspiciatis, aperiam asperiores alias fugiat accusantium rerum, tempora ducimus consequuntur atque tempore aspernatur dolorem <br> saepe minima. Tempora vel ex cupiditate minus aspernatur odio. Accusamus, recusandae sapiente? Aperiam laudantium, laborum sequi quam temporibus sapiente. Voluptates dolorum tempora ullam placeat accusantium ipsum, libero eveniet voluptatem, quod eaque <br> sit omnis dolorem, exercitationem consequuntur commodi aut velit! Iure magnam vitae reiciendis iusto labore nihil libero aliquid voluptatum, iste id fuga. Minus sed quibusdam libero, unde consequatur delectus ea! Dolor sint nemo blanditiis quo inventore libero reprehenderit laboriosam possimus nulla nostrum iusto quam minus quod consequatur eveniet nihil sed perspiciatis, aliquid cumque neque repellendus! Dolor doloribus sapiente quidem, sunt perspiciatis ea ducimus beatae nihil porro, consequuntur labore illum inventore facilis aliquam impedit fugit harum modi, neque assumenda excepturi laborum odit iure. Nesciunt quidem ipsa reprehenderit vel maxime.</p>
+        <div id="intro" class="intro">
+            <div class="content-presentation">
+                <h1 class="title-presentation">Hi! <span class="name-presentation">I'm Sergio Lopez</span>, <br> I'm a computer engineering student</h1>
+                <a href="#" href="about" class="work-button">See my work<i class="fa-solid fa-arrow-right icon-work"></i></a>
             </div>
+        </div> 
 
-            <div class="item-flex skills-about">
-                <h3 style="margin-bottom: 20px; text-align: center;">Skills</h3>
-                <div class="skills">
-                    <div class="skill-item">
-                        <img class="skill-image" src="images/html-5.png" alt="">
-                        <h3>Html</h3>
+        <header>
+            <nav class="menu">
+                <a data-link="intro" class="scroll_to" href="#home">Home</a>
+                <a data-link="about" class="scroll_to" href="#about">About</a>
+                <a data-link="projects" class="scroll_to" href="#projects">Portfolio</a>
+                <a data-link="contact" class="scroll_to" href="#contact">Contact</a>
+            </nav>
+        </header>
+        
+        <section id="about" class="about-section" >
+            <h1 class="title-section">ABOUT ME</h1>
+            <div class="line"></div>
+            <div class="flex-container">
+                <div class="flex-container-item-who">
+                    
+                    <div class="container-presentation">
+                        <p style="font-weight: 300; font-size: 16px; line-height: 1.5; margin-top: 30px;">My name is Sergio and I am currently studying my last year of the BA in Computer Science at the Universitat de Barcelona (UB).
+                            I am passionate about creating ___ (cosas técnicas y programas específicos). Besides creating interfaces (la parte més técnica), <br><br> I enjoy exploring the creativity field to  create a unique and genuine user experience.
+                            When I am not programming, you will probably find me by the Mediterranean sea or hiking in the mountains (or in the llim). </p>
                     </div>
-                    <div class="skill-item">
-                        <img  class="skill-image"src="images/css-3.png" alt="">
-                        <h3>Css</h3>
+                
+                </div>
+                <div class="flex-container-item">
+                    <div class="flex-container-skills">
+                        <img title="Javascript" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAn1BMVEX33x4AAAD+5R+VhxKBdBD/6B/64h7/////6h9uYw364R766YD44j723QD33g///vnu1x3p0hzdyBv999HkzhyaixNEPQi9qxfSvho1MAbEsRj45FRKQwmmlhSRgxJoXg1YTwt6bg+2pRbOuhlfVgyFeBA9NwefkBMcGQMiHwRRSQqLfhGvnhUKCQGEdxBzaA4TEQItKQUPDgImIwUvKwaum2iRAAAHVklEQVR4nO2ca1fiOhRA02hCJgiUAhaKyEsFAUedmf//224LeofHSZqUlmRYZy+/ATW7eTQ5PQmppXTqd+T6uKt3MjlSq7WGjabr0lRCszFsZYYtcp1+GU3SSg2H1yuYKg5rpNNwXYpKaXRI/ZqrMK3EOrnGUXSfa/dDEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEC2SU8q+oZRL1wUCoBDc5JcydevGvdun+8/l8nXw8HTbiyPKqGeWdDT+ccJ4lq/IWbgZB6esepGgFyi4MfQWKGXwmFdGSmcP0A+3LHsh86ciYcMbvSElPaXejvc2u5BALgUMJRvl+GU8c6POXD32hrT7YiAYBG9zP6rR2lBsjPwyHsUFRZTYGgrw+wqefBhULQ0Z9IBQc+9BX7QzFD+sBFNF97VoZSjWloJBMHE+3NgY0thaMH1quB5uLAxlWEAwCGLHDdXCUEwKGQah2xmcuSFPigkGK7ft1NxQ/CloGMyctlNjQ1m0ClNCB2L/Y2zICvbClLUDr7+YGuoG0pfp+mb9rpqPDyK3j0RTQ6paMb2NQrGNfAgyuwc+XzDHMzdTQ1UjndK/X+XipK+u2s6nbcZ1CAveHD4JKDmsxo1wH80wNJQRKDg+ftRJutr7NHRegcTYkM9AQ2C6wj+/P0xcz0h3GBpSMPT0DoySvL37bCp9qEBibvgT+loMDZM0C3O89v2oQGJu+A59LQLHEfEQPHoU+DY1BKMXbdBDRo6f8YecZdiFa0r6U4HE3BAM0Mw9CDTlYmo4hb428mS41GJqCMag7r0ZMDWYGsIT7/4/0ExN5zTw+vf1egwV89Jg5dGDT8GZa4vgxYvZtY5z14fp1M2DFZIO4zpcqAyDVeS1o3GcRtERt4wj4e+QYxxrEwONYjCZe+tobKgMRX0xmFE/x1XzmLfUG6Y8hq7jahDmhvAy/5Bx37/GavHuiecb7hrrxSW0WBgaviB9G/kSodlh8w5YmKYp9IhHjnaZCh+GikGPe+NoZci7poZBsPFlXLWrQ9o3V/z0JKBomTFE5+aKwTvxoRpts75satGPwL515h5tLy0Un92n0tpnX3Juk9t277ylFskRtkjATCcA3X/kHfDhj8InC8fIrWIhQyJFYtEbFcH/C1HMMO2NeevFfZzmfRU1TH/JDZZTO15cvosqbpg5jn6ZKT47VDzHMNtYEpsl7jsM/59nmOXQ9E0yo/+4q8RzDbcboG7yFQ12UlXE+YZkuwtKG2tMeXU2Qy3FMGus85xJQOLqiVGSYebYBfM1vhm76omlGWY7vto6x9KLbkiJhpljBCVg7gDTiy5AqYZZW1VO5n46ik2VbEgIU72kcjV1K92QUFVA7lrqML2kIqvf0SKqAkMi4EejowyqKgw5HI9zNHGzNjQJ1zPQsOIcMVUfgA17qsJI0f99mzsowokbiyoNJYWTXVVJh6rC0DCLJOYu9uB8W+VtKwEWvajGaraCCgM3KP71Gvgj13B6WUMqsyRt1cZXMA4BDQpSxN/fPdmEcAQDB9OqWqkUXxsJ4JRleDsTMLCzaO8gjJ5eER5pNtUYsu53wcCNjoqcw5NeS8nhiDTTjTaKp0VSxdOC8r3MV6hzMXi9cyQInIQRaxQV22lVg90ZpD3n8F+c3kS4kR6GHKSYf55+Z6RsqKqMhtL9CGsfj5PhsaKAq3C8X9u0DU/C3hUnEVHF4uJ32ZEaTh9P/smvo71yDN7NdDDqwRneGR9QLttxu/nLtNyBRooEzJuI9wqlXq3uP9LhKcGOSV8c5rJx1la+XCx3Wiq7qoTXh4Sy7ZZPxtXh6v27rT9n4M8iys74opxnl5SJ5uVpudud1U0r5en5pvc4VR/zdNSecvPZJs+LzWy26U3VMZrsv5a9xM8plZajBxcFRtKzL3o2mqTlXN6O7jbXpQebsiw9SkNfCxfmZP7Izrhd35R/roJi5mTC6cUUYQkLqnj3xMBdnwZASwCa9+Ilj0reHxYs1RI8msY8KxFkXUmstOCBOX1wfsxDw/fZIPcVBYMLdUXV3eZh8aHrQxklOhdVaFbDSnm3JdE+0HW0qwsjWisONDdbsmkhv48KBW1zJYOBvjkplw06qk7d46FZNsiWSd4huTS0Poan+vRLyYxPkcsJL22vJmKrx8ayf4lXalmw1ADDo4Cs8tkWF9oJxUWcuzp4M0+tp3RjdurXJXddcJZoO9CL3VYeKvq5Z3yuLr07iLP2QrHmHTza74/klM3X6lnh08jFLjZJGUluxgczk4/JOg5Fsc7CqSDJ4uSEr4fbTd/hmd7prRe0Hc2TOE7mUZsLZnY2ufp6lDHS7SfxbBbH836XpFd0v89SSi55+lfaCSTp1b5w7oYgCIIgiI/cuS5AxdyRetN1GSqlWSedhutCVEqjQ2rDa67E5rBGai1yvYpN0koNa61h4zodm41hq5YZ1mqd+jWOqHf1Tib3H2KpZPqC984dAAAAAElFTkSuQmCC" alt="">
+                        <img title="ReactJS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/800px-React.svg.png" alt="flutter">
+                        <img title="Flutter" src="https://camo.githubusercontent.com/dc130e15e764a2ce83daf7503c9b73e5ee349259ceb82b4a0f393339289f8564/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a352d616f4b3849426d58766535776842514d393047412e706e67" alt="">
+                        <img title="Python" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="">
+                        <img title="Java" src="https://cdn2.dineroenimagen.com/media/dinero/images/blogs/javalogo.jpg" alt="">
+                        <img title="Github" src="https://pbs.twimg.com/profile_images/1414990564408262661/r6YemvF9_400x400.jpg" alt="">
+                        
+                
                     </div>
-                    <div class="skill-item">
-                        <img  class="skill-image" src="images/js.png" alt="">
-                        <h3>Javscript</h3>
-                    </div>
-                    <div class="skill-item">
-                        <img  class="skill-image" src="images/react.png" alt="">
-                        <h3>React</h3>
-                    </div>
-                    <div class="skill-item">
-                        <img  class="skill-image" src="images/python.png" alt="">
-                        <h3>Python</h3>
-                    </div>
-                    <div class="skill-item">
-                        <img  class="skill-image" src="images/github.png" alt="">
-                        <h3>Git</h3>
-                    </div>
-                      
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <section style="z-index: 10;" class="project-section">
-        <h1 class="aaa">PROJECTS</h1>
-        
-        <div class="under-line"></div>
-        <div class="projects">
-            <div class="project-1"></div>
-            <div class="project-2"></div>
-            <div class="project-3"></div>
-        </div>
-    </section>
 
-
-    
-
-    <section class="contact-section">
-        <h1 style="text-align: center;" class="contact-title">CONTACT</h1>
-        <div class="under-line"></div>
-        <form action="https://formsubmit.co/slopezmanga@gmail.com" method="POST" class="form">
-            
-            <label for="name">Name:</label>
-            <input type="text" placeholder="Your Name">
-        
-            <label for="name">Email:</label>
-            <input type="email" placeholder="Your email" required>
-          
-            
-            <label for="message">Message:</label>
-            <textarea name="message" placeholder="Your message" rows="6"></textarea>
-            
-            <div class="center">
-                <input type = "submit" value="Send Message">
-                <p id="success"></p>
+        <section id="projects" class="project-section" style="text-align: center;">
+            <h1 class="title-section">PROJECTS</h1>
+            <div class="line"></div>
+            <div class="project-flex">
+                
+                <div id="card1" class="card" style=" background-size: cover; background-image: url(https://images.unsplash.com/photo-1622532832487-b18b9c7f23d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80);">
+                    <div class="content">
+                        <p>Flutter, Dart</p>
+                        <h3>Social Network</h3>
+                        <button href="" class="button-project">Project Link</button>
+                    </div>
+                </div>
+                <div id="card2" class="card" style=" background-image: url(https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);">
+                    <div class="content">
+                        <p>C, MSP432P401R</p>
+                        <h3>Automated robot</h3>
+                        <button href="" class="button-project">Project Link</button>
+                        <button href="" class="button-project">See Video</button>
+                    </div>
+                </div>
+                <div id="card3" class="card" style="background-image: url(https://images.unsplash.com/photo-1613865342914-5c41d188d02d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);">
+                    <div class="content">
+                        <p>Javascript, ReactJS</p>
+                        <h3>Recipe App</h3>
+                        <button onClick="window.open('http://www.example.com')" class="button-project">Project Link</button>
+                    </div>
+                </div>
+                <div id="card4" class="card" style="background-image: url(https://images.unsplash.com/photo-1507619579562-f2e10da1ec86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">
+                    <div class="content">
+                        <p>Wordpress</p>
+                        <h3>Americans in Barcelona</h3>
+                        <button href="" class="button-project">Project Link</button>
+                    </div>
+                </div>
             </div>
-            
-        </form>
-    </section>
-    
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
-    
-    
+        </section>
 
 
+        <section id="contact" style="background: #252934;" class="contact-section">
+            <h1 class="title-section" style="color: white;">CONTACT</h1>
+            <div style="background-color: white;" class="line"></div>
+            <form  id="form" style="background: #252934";method="POST" action="https://formsubmit.co/slopezmanga@gmail.com">
+
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+                
+
+                <label for="name">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Your email" required>
+                
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="How can I help you?" required></textarea>
+                
+                <button type="submit">Send</button>
+
+            </form>
+        </section>
+        
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+        <script src="main.js"></script>
+        
 </body>
 </html>

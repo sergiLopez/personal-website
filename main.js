@@ -1,22 +1,33 @@
-ScrollReveal({
-    reset: false,
-    distance: '300px',
-    duration: 2500,
-    delay: 400,
-    viewFactor: 1
-   
-});
 
-ScrollReveal().reveal('.text-about', {delay: 0, viewFactor: 0.7, origin: 'left', duration: 1500})
-ScrollReveal().reveal('.skills-about', {delay: 0, origin: 'right', duration: 1500})
+//SCROLL NAVBAR
 
-/*********  images projects  **********/ 
+const links = document.querySelectorAll(".scroll_to");
 
-ScrollReveal().reveal('.project-1', {delay: 0, origin: 'left', duration: 1500})
-ScrollReveal().reveal('.project-2', {delay: 270, duration: 1500})
-ScrollReveal().reveal('.project-3', {delay: 540, origin: 'right', duration: 1500})
+links.forEach(item => {
+    item.addEventListener("click", function(e) {
+        e.preventDefault();
+        const el = document.getElementById(item.getAttribute("data-link"));
+        el.scrollIntoView({behavior:"smooth",block: "nearest"})
+    }) 
+})
+
+const button = document.querySelector(".work-button")
+
+button.addEventListener("click", function(e){
+    e.preventDefault();
+    const section = document.getElementById("about")
+    section.scrollIntoView({behavior: "smooth", block: "nearest"})
+
+})
 
 
-ScrollReveal().reveal('.under-line',{delay: 200, origin: 'right', duration: 1500})
+//SCROLL REVEAL
 
-ScrollReveal().reveal('.form', {delay: 0, distance: 0, viewFactor: 0.7, duration: 2000})
+ScrollReveal().reveal('.flex-container-item', {duration: 3000, origin: 'bottom', distance: '200px'});
+ScrollReveal().reveal('.flex-container-item-who',  {duration: 3000, origin: 'bottom', distance: '200px'});
+ScrollReveal().reveal('#form',  {duration: 3000, origin: 'bottom', distance: '100px'});
+
+ScrollReveal().reveal('#card1',  {rotate: {x:1, y:100}, duration: 2000});
+ScrollReveal().reveal('#card2',  {rotate: {x:1, y:100}, duration: 2000,delay: 200});
+ScrollReveal().reveal('#card3',  {rotate: {x:1, y:100}, duration: 2000, delay: 400});
+ScrollReveal().reveal('#card4',  {rotate: {x:1, y:100}, duration: 2000, delay: 600});
