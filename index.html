@@ -17,9 +17,28 @@
 </head>
 <body>
     
+        <!--- BURGER MOBILE BAR  -->
+        <nav class="menu-burger">
+            <div class="burger">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <a data-link="intro" class="scroll_to" href="#home" tag="burger-item">Home</a>
+            <a data-link="about" class="scroll_to" href="#about" tag="burger-item">About</a>
+            <a data-link="projects" class="scroll_to" href="#projects" tag="burger-item">Portfolio</a>
+            <a data-link="contact" class="scroll_to" href="#contact" tag="burger-item">Contact</a>
+        </nav> 
+       <div id="particles-js">
+             
+       </div>
 
-       <div id="particles-js"></div>
+       
 
+
+        
+         <!--- INTRO  -->
+       
         <div id="intro" class="intro">
             <div class="content-presentation">
                 <h1 class="title-presentation">Hi! <span class="name-presentation">I'm Sergio Lopez</span>, <br> I'm a computer engineering student</h1>
@@ -27,13 +46,14 @@
             </div>
         </div> 
 
+
         <header>
             <nav class="menu">
                 <a data-link="intro" class="scroll_to" href="#home">Home</a>
                 <a data-link="about" class="scroll_to" href="#about">About</a>
                 <a data-link="projects" class="scroll_to" href="#projects">Portfolio</a>
                 <a data-link="contact" class="scroll_to" href="#contact">Contact</a>
-            </nav>
+            </nav>  
         </header>
         
         <section id="about" class="about-section" >
@@ -107,7 +127,7 @@
         <section id="contact" style="background: #252934;" class="contact-section">
             <h1 class="title-section" style="color: white;">CONTACT</h1>
             <div style="background-color: white;" class="line"></div>
-            <form  id="form" style="background: #252934";method="POST" action="https://formsubmit.co/slopezmanga@gmail.com">
+            <form  id="form" style="background: #252934;" method="POST" action="https://formsubmit.co/slopezmanga@gmail.com">
 
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" placeholder="Your name" required>
