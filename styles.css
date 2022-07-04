@@ -23,7 +23,7 @@
 
 
 .container-presentation{
-    width: 800px;
+   
     margin-top: 80px;
     margin-bottom: 60px;
     
@@ -67,8 +67,17 @@ h2{
     transition: 0.5s;
 }
 
+
+
 .work-button:hover i{
     transform: rotate(90deg);
+
+    transition: 0.5s;
+}
+
+
+.work-button:not(hover) i{
+    transform: rotate(0deg);
 
     transition: 0.5s;
 }
@@ -133,8 +142,8 @@ p{
 
 .flex-container-item-who{
     text-align: center;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 23%;
+    padding-right: 23%;
 }
 
 img{
