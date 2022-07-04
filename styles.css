@@ -116,6 +116,8 @@ header .menu a:hover{
     text-align: center;
     background-color: #252934;
     z-index: 100;
+    background-color: rgb(45, 90, 92);
+
 }
 
 .menu-burger a{
@@ -124,6 +126,7 @@ header .menu a:hover{
     color: white;
     display: none;
     margin: 50px 15px;
+   
 }
 
 
@@ -375,6 +378,9 @@ form button{
     position: fixed;
     right: 15px;
     top: 15px;
+    padding: 10px;
+    background-color: #181a1f;
+    opacity: 0.8;
 }
 
 
