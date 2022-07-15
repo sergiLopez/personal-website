@@ -117,6 +117,7 @@ header .menu a:hover{
     background-color: #252934;
     z-index: 100;
     background-color: rgb(45, 90, 92);
+    transition: 0.8s ;
 
 }
 
@@ -279,6 +280,7 @@ form button{
     width: 200px;
     margin: 20px auto 0;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .button-project{
@@ -289,6 +291,7 @@ form button{
     border: 1px solid white;
     font-size: 15px;
     background-color: grey;
+    cursor: pointer;
 }
 
 .button-project:hover{
@@ -368,7 +371,6 @@ form button{
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     background-color: white;
 }
 
@@ -379,6 +381,7 @@ form button{
     right: 15px;
     top: 15px;
     padding: 10px;
+    border-radius: 3px;
     background-color: #181a1f;
     opacity: 0.8;
 }
@@ -387,6 +390,7 @@ form button{
 @media (max-width:768px) {
     .menu-burger{
         display: block;
+        transition: s;
     }
 
     .menu{

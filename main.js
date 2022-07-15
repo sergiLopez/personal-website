@@ -2,12 +2,17 @@
 //SCROLL NAVBAR
 
 const links = document.querySelectorAll(".scroll_to");
+listItems = document.querySelectorAll(".menu-burger a")
 
 links.forEach(item => {
     item.addEventListener("click", function(e) {
+        for (let i = 0; i < listItems.length; i++) {
+            listItems[i].style.display = "none"
+            menuBurger.classList.remove('active');
+        }
         e.preventDefault();
         const el = document.getElementById(item.getAttribute("data-link"));
-        el.scrollIntoView({behavior:"smooth",block: "nearest"})
+        el.scrollIntoView({behavior:"smooth",block: "start"})
     }) 
 })
 
@@ -16,15 +21,13 @@ const button = document.querySelector(".work-button")
 button.addEventListener("click", function(e){
     e.preventDefault();
     const section = document.getElementById("about")
-    section.scrollIntoView({behavior: "smooth", block: "nearest"})
+    section.scrollIntoView({behavior: "smooth", block: "start"})
 
 })
 
 //MOBILE RESPONSIVE
 menuBurger = document.querySelector(".menu-burger");
 burgerButton = document.querySelector(".burger");
-listItems = document.querySelectorAll(".menu-burger a")
-
 
 burgerButton.addEventListener("click", () =>{
     
